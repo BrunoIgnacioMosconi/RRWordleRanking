@@ -18,3 +18,8 @@ tr:nth-child(even) {
   background-color: #008f39;
   color:white;
 }
+
+.tie {
+  background-color: #bdecb6;
+  color:white;
+}
