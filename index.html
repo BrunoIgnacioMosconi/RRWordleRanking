@@ -4,290 +4,440 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wordle Ranking</title>
-    <script src="dailyPoints.js"></script>
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <div id="week3">
-      <h2>Semana 3 (13/06 - 16/06)</h2>
-      <table>
-        <tr>
-          <th>Nombre</th>
-          <th><a href="https://wordle.danielfrg.com/personalizada/?p=U2FsdGVkX19cRrRtNbarMOpm2IMhOnjmoSJHJ8lLs94%3D&t=false" target="_blank">Lunes</a></th>
-          <th><a href="https://wordle.danielfrg.com/personalizada/?p=U2FsdGVkX1%2FLSVWj0RSZZePF6NVq0HBgcJodBUu0WLo%3D&t=false" target="_blank">Martes</a></th>
-          <th><a href="https://wordle.danielfrg.com/personalizada/?p=U2FsdGVkX19syZoXsts6zCVk81yVL%2BHbQcfn9CoZxNE%3D&t=false" target="_blank">Miercoles</a></th>
-          <th><a href="https://wordle.danielfrg.com/personalizada/?p=U2FsdGVkX19xrfkftDCxLqwYSpZ20R4R3GXGzAj2Xf0%3D&t=false" target="_blank">Jueves</a></th>
-          <th>Viernes (feriado)</th>
-          <th>Total</th>
-          <th><a href="https://wordle.danielfrg.com/personalizada/?p=U2FsdGVkX1%2B6ddQzINsEbUafSvw%2Fvp2nVeLcggnrKBE%3D&t=false" target="_blank">Desempate</a></th>
-        </tr>
-        <tr>
-          <td>Verona</td>
-          <td>5</td>
-          <td>3</td>
-          <td>3</td>
-          <td>2</td>
-          <td>-</td>
-          <td class="tie">13</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>Ing</td>
-          <td>4</td>
-          <td>4</td>
-          <td>3</td>
-          <td>3</td>
-          <td>-</td>
-          <td>14</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>Marta</td>
-          <td>3</td>
-          <td>5</td>
-          <td>3</td>
-          <td>5</td>
-          <td>-</td>
-          <td>16</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>Alfonso</td>
-          <td>4</td>
-          <td>4</td>
-          <td>3</td>
-          <td>4</td>
-          <td>-</td>
-          <td>15</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>Valen</td>
-          <td>5</td>
-          <td>4</td>
-          <td>4</td>
-          <td>4</td>
-          <td>-</td>
-          <td>17</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>Nachanga</td>
-          <td>3</td>
-          <td>3</td>
-          <td>4</td>
-          <td>4</td>
-          <td>-</td>
-          <td>14</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>Juan V.</td>
-          <td>3</td>
-          <td>4</td>
-          <td>3</td>
-          <td>3</td>
-          <td>-</td>
-          <td class="tie">13</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>Mono</td>
-          <td>3</td>
-          <td>5</td>
-          <td>4</td>
-          <td></td>
-          <td>-</td>
-          <td>12</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>Joaco</td>
-          <td>5</td>
-          <td>3</td>
-          <td>5</td>
-          <td>2</td>
-          <td>-</td>
-          <td>15</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>Franco</td>
-          <td>3</td>
-          <td>5</td>
-          <td>6</td>
-          <td></td>
-          <td>-</td>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>Quito</td>
-          <td>5</td>
-          <td>5</td>
-          <td>3</td>
-          <td>4</td>
-          <td>-</td>
-          <td>17</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>Juli</td>
-          <td>3</td>
-          <td>5</td>
-          <td>2</td>
-          <td>4</td>
-          <td>-</td>
-          <td>14</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>Paloma</td>
-          <td>4</td>
-          <td>4</td>
-          <td>3</td>
-          <td>3</td>
-          <td>-</td>
-          <td>14</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>Lu</td>
-          <td>3</td>
-          <td>4</td>
-          <td>4</td>
-          <td>3</td>
-          <td>-</td>
-          <td>14</td>
-          <td></td>
-        </tr>
-        <!-- <tr>
-          <td>Wendy</td>
-          <td>3</td>
-          <td></td>
-          <td>3</td>
-          <td></td>
-          <td>-</td>
-          <td></td>
-        </tr> -->
-      </table>
+    <button id="currentWeek" class="accordion">Semana 4</button>
+    <div id="currentWeekPanel" class="panel">
+      <div id="week4">
+        <h2>Semana 4 (21/06 - 24/06)</h2>
+        <table>
+          <tr>
+            <th>Nombre</th>
+            <th>Lunes (feriado)</th>
+            <th>Martes</th>
+            <th>Miercoles</th>
+            <th>Jueves</th>
+            <th>Viernes </th>
+            <th>Total</th>
+          </tr>
+          <tr>
+            <td>Verona</td>
+            <td>-</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Ing</td>
+            <td>-</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Marta</td>
+            <td>-</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Alfonso</td>
+            <td>-</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Valen</td>
+            <td>-</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Nachanga</td>
+            <td>-</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Juan V.</td>
+            <td>-</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Mono</td>
+            <td>-</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Joaco</td>
+            <td>-</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Franco</td>
+            <td>-</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Quito</td>
+            <td>-</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Juli</td>
+            <td>-</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Paloma</td>
+            <td>-</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Lu</td>
+            <td>-</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </table>
+      </div>
     </div>
-    <div id="week2">
-      <h2>Semana 2 (06/06 - 10/06)</h2>
-      <table>
-        <tr>
-          <th>Nombre</th>
-          <th><a href="https://wordle.danielfrg.com/personalizada/?p=U2FsdGVkX19kQg3sit37MvvMHoCLLtLIPQTJ6vk0Erc%3D&t=false" target="_blank">Lunes</a></th>
-          <th><a href="https://wordle.danielfrg.com/personalizada/?p=U2FsdGVkX18o%2F8M3muGE6wkuXdYEz%2BZOljyh6ddk1UA%3D&t=false" target="_blank">Martes</a></th>
-          <th><a href="https://wordle.danielfrg.com/personalizada/?p=U2FsdGVkX1%2B6pvNgBv9xsuX01NQhF4hLz9TFUZWFnvo%3D&t=false" target="_blank">Miercoles</a></th>
-          <th><a href="https://wordle.danielfrg.com/personalizada/?p=U2FsdGVkX1%2BM8%2Bj%2B%2FOyXgadt1KGeTVWQ7vH9iJ8yVWs%3D&t=false" target="_blank">Jueves</a></th>
-          <th><a href="https://wordle.danielfrg.com/personalizada/?p=U2FsdGVkX1%2BcdQd%2FiGSGJhXJJFRDk3paLhvKBaxaBQY%3D&t=false" target="_blank">Viernes</a></th>
-          <th>Total</th>
-          <th><a href="https://wordle.danielfrg.com/personalizada/?p=U2FsdGVkX1%2FYRrDyXSLhrtZrAgIwAKVBTeEmEsq3zqs%3D&t=false" target="_blank">Desempate (creado por lu)</a></th>
-        </tr>
-        <tr>
-          <td>Verona</td>
-          <td>4</td>
-          <td>4</td>
-          <td>3</td>
-          <td>5</td>
-          <td>3</td>
-          <td>19</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>Ing</td>
-          <td>2</td>
-          <td>3</td>
-          <td>4</td>
-          <td>3</td>
-          <td>3</td>
-          <td class="tie">15</td>
-          <td>5</td>
-        </tr>
-        <tr>
-          <td>Marta</td>
-          <td>3</td>
-          <td>3</td>
-          <td>3</td>
-          <td>5</td>
-          <td>4</td>
-          <td>18</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>Alfonso</td>
-          <td>3</td>
-          <td>3</td>
-          <td>4</td>
-          <td>2</td>
-          <td>3</td>
-          <td class="tie">15</td>
-          <td class="winner">4</td>
-        </tr>
-        <tr>
-          <td>Valen</td>
-          <td>4</td>
-          <td>3</td>
-          <td>4</td>
-          <td>5</td>
-          <td>4</td>
-          <td>20</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>Nachanga</td>
-          <td>3</td>
-          <td>4</td>
-          <td>4</td>
-          <td>4</td>
-          <td>5</td>
-          <td>20</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>Juan V.</td>
-          <td>3</td>
-          <td>5</td>
-          <td>2</td>
-          <td>3</td>
-          <td>3</td>
-          <td>16</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>Mono</td>
-          <td>4</td>
-          <td>4</td>
-          <td>5</td>
-          <td>4</td>
-          <td>2</td>
-          <td>19</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>Joaco</td>
-          <td>5</td>
-          <td>5</td>
-          <td>4</td>
-          <td>3</td>
-          <td>4</td>
-          <td>21</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>Franco</td>
-          <td>3</td>
-          <td>5</td>
-          <td>4</td>
-          <td>5</td>
-          <td>5</td>
-          <td>22</td>
-          <td></td>
-        </tr>
-      </table>
+    <button class="accordion">Semana 3</button>
+    <div class="panel">
+      <div id="week3">
+        <h2>Semana 3 (13/06 - 16/06)</h2>
+        <table>
+          <tr>
+            <th>Nombre</th>
+            <th><a href="https://wordle.danielfrg.com/personalizada/?p=U2FsdGVkX19cRrRtNbarMOpm2IMhOnjmoSJHJ8lLs94%3D&t=false" target="_blank">Lunes</a></th>
+            <th><a href="https://wordle.danielfrg.com/personalizada/?p=U2FsdGVkX1%2FLSVWj0RSZZePF6NVq0HBgcJodBUu0WLo%3D&t=false" target="_blank">Martes</a></th>
+            <th><a href="https://wordle.danielfrg.com/personalizada/?p=U2FsdGVkX19syZoXsts6zCVk81yVL%2BHbQcfn9CoZxNE%3D&t=false" target="_blank">Miercoles</a></th>
+            <th><a href="https://wordle.danielfrg.com/personalizada/?p=U2FsdGVkX19xrfkftDCxLqwYSpZ20R4R3GXGzAj2Xf0%3D&t=false" target="_blank">Jueves</a></th>
+            <th>Viernes (feriado)</th>
+            <th>Total</th>
+            <th><a href="https://wordle.danielfrg.com/personalizada/?p=U2FsdGVkX1%2B6ddQzINsEbUafSvw%2Fvp2nVeLcggnrKBE%3D&t=false" target="_blank">Desempate</a></th>
+          </tr>
+          <tr>
+            <td>Verona</td>
+            <td>5</td>
+            <td>3</td>
+            <td>3</td>
+            <td>2</td>
+            <td>-</td>
+            <td class="tie">13</td>
+            <td>4</td>
+          </tr>
+          <tr>
+            <td>Ing</td>
+            <td>4</td>
+            <td>4</td>
+            <td>3</td>
+            <td>3</td>
+            <td>-</td>
+            <td>14</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Marta</td>
+            <td>3</td>
+            <td>5</td>
+            <td>3</td>
+            <td>5</td>
+            <td>-</td>
+            <td>16</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Alfonso</td>
+            <td>4</td>
+            <td>4</td>
+            <td>3</td>
+            <td>4</td>
+            <td>-</td>
+            <td>15</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Valen</td>
+            <td>5</td>
+            <td>4</td>
+            <td>4</td>
+            <td>4</td>
+            <td>-</td>
+            <td>17</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Nachanga</td>
+            <td>3</td>
+            <td>3</td>
+            <td>4</td>
+            <td>4</td>
+            <td>-</td>
+            <td>14</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Juan V.</td>
+            <td>3</td>
+            <td>4</td>
+            <td>3</td>
+            <td>3</td>
+            <td>-</td>
+            <td class="tie">13</td>
+            <td class="winner">3</td>
+          </tr>
+          <tr>
+            <td>Mono</td>
+            <td>3</td>
+            <td>5</td>
+            <td>4</td>
+            <td>3</td>
+            <td>-</td>
+            <td>15</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Joaco</td>
+            <td>5</td>
+            <td>3</td>
+            <td>5</td>
+            <td>2</td>
+            <td>-</td>
+            <td>15</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Franco</td>
+            <td>3</td>
+            <td>5</td>
+            <td>6</td>
+            <td>5</td>
+            <td>-</td>
+            <td>19</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Quito</td>
+            <td>5</td>
+            <td>5</td>
+            <td>3</td>
+            <td>4</td>
+            <td>-</td>
+            <td>17</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Juli</td>
+            <td>3</td>
+            <td>5</td>
+            <td>2</td>
+            <td>4</td>
+            <td>-</td>
+            <td>14</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Paloma</td>
+            <td>4</td>
+            <td>4</td>
+            <td>3</td>
+            <td>3</td>
+            <td>-</td>
+            <td>14</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Lu</td>
+            <td>3</td>
+            <td>4</td>
+            <td>4</td>
+            <td>3</td>
+            <td>-</td>
+            <td>14</td>
+            <td></td>
+          </tr>
+          <!-- <tr>
+            <td>Wendy</td>
+            <td>3</td>
+            <td></td>
+            <td>3</td>
+            <td></td>
+            <td>-</td>
+            <td></td>
+          </tr> -->
+        </table>
+      </div>
     </div>
-    <div id="week1">
+    <button class="accordion">Semana 2</button>
+    <div class="panel">
+      <div id="week2">
+        <h2>Semana 2 (06/06 - 10/06)</h2>
+        <table>
+          <tr>
+            <th>Nombre</th>
+            <th><a href="https://wordle.danielfrg.com/personalizada/?p=U2FsdGVkX19kQg3sit37MvvMHoCLLtLIPQTJ6vk0Erc%3D&t=false" target="_blank">Lunes</a></th>
+            <th><a href="https://wordle.danielfrg.com/personalizada/?p=U2FsdGVkX18o%2F8M3muGE6wkuXdYEz%2BZOljyh6ddk1UA%3D&t=false" target="_blank">Martes</a></th>
+            <th><a href="https://wordle.danielfrg.com/personalizada/?p=U2FsdGVkX1%2B6pvNgBv9xsuX01NQhF4hLz9TFUZWFnvo%3D&t=false" target="_blank">Miercoles</a></th>
+            <th><a href="https://wordle.danielfrg.com/personalizada/?p=U2FsdGVkX1%2BM8%2Bj%2B%2FOyXgadt1KGeTVWQ7vH9iJ8yVWs%3D&t=false" target="_blank">Jueves</a></th>
+            <th><a href="https://wordle.danielfrg.com/personalizada/?p=U2FsdGVkX1%2BcdQd%2FiGSGJhXJJFRDk3paLhvKBaxaBQY%3D&t=false" target="_blank">Viernes</a></th>
+            <th>Total</th>
+            <th><a href="https://wordle.danielfrg.com/personalizada/?p=U2FsdGVkX1%2FYRrDyXSLhrtZrAgIwAKVBTeEmEsq3zqs%3D&t=false" target="_blank">Desempate (creado por lu)</a></th>
+          </tr>
+          <tr>
+            <td>Verona</td>
+            <td>4</td>
+            <td>4</td>
+            <td>3</td>
+            <td>5</td>
+            <td>3</td>
+            <td>19</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Ing</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>3</td>
+            <td>3</td>
+            <td class="tie">15</td>
+            <td>5</td>
+          </tr>
+          <tr>
+            <td>Marta</td>
+            <td>3</td>
+            <td>3</td>
+            <td>3</td>
+            <td>5</td>
+            <td>4</td>
+            <td>18</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Alfonso</td>
+            <td>3</td>
+            <td>3</td>
+            <td>4</td>
+            <td>2</td>
+            <td>3</td>
+            <td class="tie">15</td>
+            <td class="winner">4</td>
+          </tr>
+          <tr>
+            <td>Valen</td>
+            <td>4</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+            <td>4</td>
+            <td>20</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Nachanga</td>
+            <td>3</td>
+            <td>4</td>
+            <td>4</td>
+            <td>4</td>
+            <td>5</td>
+            <td>20</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Juan V.</td>
+            <td>3</td>
+            <td>5</td>
+            <td>2</td>
+            <td>3</td>
+            <td>3</td>
+            <td>16</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Mono</td>
+            <td>4</td>
+            <td>4</td>
+            <td>5</td>
+            <td>4</td>
+            <td>2</td>
+            <td>19</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Joaco</td>
+            <td>5</td>
+            <td>5</td>
+            <td>4</td>
+            <td>3</td>
+            <td>4</td>
+            <td>21</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Franco</td>
+            <td>3</td>
+            <td>5</td>
+            <td>4</td>
+            <td>5</td>
+            <td>5</td>
+            <td>22</td>
+            <td></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <button class="accordion">Semana 1</button>
+    <div class="panel">
+      <div id="week1">
       <h2>Semana 1 (30/05 - 03/06)</h2>
       <table>
         <tr>
@@ -354,6 +504,24 @@
           <td class="winner">15</td>
         </tr>
       </table>
+      </div>
     </div>
+
+    <script>
+      var acc = document.getElementsByClassName("accordion");
+      var i;
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var panel = this.nextElementSibling;
+          console.log("entre")
+          if (panel.style.display === "block") {
+            panel.style.display = "none";
+          } else {
+            panel.style.display = "block";
+          }
+        });
+      }
+      </script>
   </body>
 </html>
