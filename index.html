@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wordle Ranking</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="accordion.js"></script>
   </head>
   <body>
     <!--#region main week4 -->
@@ -17,8 +18,8 @@
             <th>Nombre</th>
             <th>Lunes (feriado)</th>
             <th><a href="https://wordle.danielfrg.com/personalizada/?p=U2FsdGVkX18HX8Rbqd3u%2BERuCga7NogjQXqDLSKHBVc%3D&t=false" target="_blank">Martes</a></th>
-            <th>Miercoles</th>
-            <th>Jueves</th>
+            <th><a href="https://wordle.danielfrg.com/personalizada/?p=U2FsdGVkX1%2B2NuIt2E7QV2pnDTQaasnL1gdyKNyFjtg%3D&t=false" target="_blank">Miercoles</a></th>
+            <th><a href="https://wordle.danielfrg.com/personalizada/?p=U2FsdGVkX1%2BUC3Px7Jv3z5m1p%2BwUIXXlNgTjyw6dy8Q%3D&t=false" target="_blank">Jueves</a></th>
             <th>Viernes </th>
             <th>Total</th>
           </tr>
@@ -26,91 +27,91 @@
             <td>Verona</td>
             <td>-</td>
             <td>3</td>
+            <td>3</td>
+            <td>2</td>
             <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>8</td>
           </tr>
           <tr>
             <td>Ing</td>
             <td>-</td>
             <td>2</td>
+            <td>3</td>
+            <td>3</td>
             <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>8</td>
           </tr>
           <tr>
             <td>Marta</td>
             <td>-</td>
             <td>3</td>
+            <td>3</td>
+            <td>5</td>
             <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>11</td>
           </tr>
           <tr>
             <td>Alfonso</td>
             <td>-</td>
             <td>3</td>
+            <td>3</td>
+            <td>4</td>
             <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>10</td>
           </tr>
           <tr>
             <td>Valen</td>
             <td>-</td>
             <td>4</td>
+            <td>5</td>
+            <td>3</td>
             <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>12</td>
           </tr>
           <tr>
             <td>Nachanga</td>
             <td>-</td>
             <td>4</td>
+            <td>8</td>
+            <td>4</td>
             <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>16</td>
           </tr>
           <tr>
             <td>Juan V.</td>
             <td>-</td>
             <td>2</td>
+            <td>3</td>
+            <td>2</td>
             <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>7</td>
           </tr>
           <tr>
             <td>Mono</td>
             <td>-</td>
             <td>3</td>
+            <td>5</td>
+            <td>3</td>
             <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>11</td>
           </tr>
           <tr>
             <td>Joaco</td>
             <td>-</td>
             <td>3</td>
+            <td>3</td>
+            <td>2</td>
             <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>8</td>
           </tr>
           <tr>
             <td>Franco</td>
             <td>-</td>
             <td>3</td>
+            <td>3</td>
+            <td>4</td>
             <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>10</td>
           </tr>
           <tr>
             <td>Quito</td>
@@ -125,28 +126,28 @@
             <td>Juli</td>
             <td>-</td>
             <td>3</td>
+            <td>3</td>
+            <td>3</td>
             <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>9</td>
           </tr>
           <tr>
             <td>Paloma</td>
             <td>-</td>
             <td>4</td>
+            <td>4</td>
+            <td>3</td>
             <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>11</td>
           </tr>
           <tr>
             <td>Lu</td>
             <td>-</td>
             <td>2</td>
+            <td>3</td>
+            <td>3</td>
             <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>8</td>
           </tr>
         </table>
       </div>
@@ -514,21 +515,5 @@
       </div>
     </div>
     <!--#endregion -->
-    <script>
-      var acc = document.getElementsByClassName("accordion");
-      var i;
-      for (i = 0; i < acc.length; i++) {
-        acc[i].addEventListener("click", function() {
-          this.classList.toggle("active");
-          var panel = this.nextElementSibling;
-          console.log("entre")
-          if (panel.style.display === "block") {
-            panel.style.display = "none";
-          } else {
-            panel.style.display = "block";
-          }
-        });
-      }
-    </script>
   </body>
 </html>
